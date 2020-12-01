@@ -1,7 +1,7 @@
 import React from "react";
 
 const Error = () => {
-  return <h1>No match</h1>;
+  return <div>No match</div>;
 };
 
 export default Error;
