@@ -19,11 +19,12 @@ class App extends Component {
   render() {
     return (
       <div id="main">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
         <Switch>
-          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Redirect to="/" />
-          <Route path="*" component={Error} />
+          <Route path="/" exact component={Home} />
+          <Route path="/" component={Error} />
         </Switch>
         <LocationDisplayComponent />
 
